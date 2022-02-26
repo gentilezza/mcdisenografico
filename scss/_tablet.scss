@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+$rosa: #ffd7cd;
+$azul: #152037;
+/*estilos generales*/
+body {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    background-color: #ffffff;
+    height: 100%;
+    
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+footer {
+    bottom: 0; 
+    position: fixed;
+    background-color: $azul;;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    width: 100%;
+}
+.avatar img {
+    height: 100%;
+    width: 100%;
+}
+.clientes img {
+    height: 100%;
+    width: 100%;
+}
+.logoHome img {
+    height: 100%;
+    width: 100%;
+}
+/*NOMBRAR AREAS*/
+
+#homeBanner {grid-area: homeBanner; }
+.menu {grid-area: menu; }
+#seccionPrincipal {grid-area: seccionPrincipal; }
+footer {grid-area: footer; }
+.bannerSeccion {grid-area: bannerSeccion; }
+.nuestrosServicios {grid-area: nuestrosServicios; }
+.sobre-mi {grid-area: sobre-mi; }
+.barra {grid-area: barra; }
+.clientes {grid-area: clientes; }
+.formulario {grid-area: formulario; }
+.brumia {grid-area: brumia; }
+.prier {grid-area: prier; }
+.astronaut {grid-area: astronaut; }
+.angelines { grid-area: angelines; }
+.magnolias { grid-area: magnolias; }
+.pieles { grid-area: pieles; }
+.nuestrosClientes {grid-area: nuestrosClientes;}
+
+
+/* TABLET *//* TABLET *//* TABLET *//* TABLET *//* TABLET *//* TABLET *//* TABLET *//* TABLET */
+
+
+
+@media (min-width: 481px) and (max-width: 1023px) {
+/* INDEX */ 
+#home {
+    display: grid;
+    grid-template-areas: 
+    "homeBanner"
+    "seccionPrincipal"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+}
+.avatar{
+    width: 150px;
+    float: left;
+}
+#homeBanner {
+    background-color: $azul;
+    text-transform: uppercase;
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    font-size: x-large;
+    height: 100%;
+    list-style: none;
+    background-color: $azul;
+    font-weight: 500;
+    padding-bottom: 5px;
+    float: right;
+    display: flex;
+    padding-top: 51px;
+    a {
+        padding: 15px;
+    }
+}
+#seccionPrincipal {
+    width: 100%;
+    justify-content: center;
+    font-size: large;
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10%;
+    color: white;
+    h1 {
+        font-size: xx-large;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        text-shadow: -5px -2px 8px rgba(0,0,0,0.6);       
+        -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+}
+@-webkit-keyframes tracking-in-expand {
+0% {
+  letter-spacing: -0.5em;
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes tracking-in-expand {
+0% {
+  letter-spacing: -0.5em;
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  opacity: 1;
+}
+}
+.redes {
+    padding-top: 6%;
+    img{
+        height: 60px;
+        width: 60px;
+    }
+}
+#logoHome {
+    height: 200px;
+}
+.principal {
+    background-image: url(../assets/background.png);
+}
+footer {
+    background-color: $azul;;
+    height: 7%;
+    align-items: center;
+    img {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+/* SERVICIOS */
+#servicios {
+    display: grid;
+    grid-template-areas: 
+    "homeBanner"
+    "menu"
+    "bannerSeccion"
+    "nuestrosServicios"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+}
+.nuestrosServicios {
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: center;
+margin-bottom: 10%;
+    img {
+    width: 450px;
+    height: 450px;
+    margin: 15px auto;
+    h2 {
+        background-color: $azul;
+        color: white;
+        width: 50%;
+        margin: auto;
+        border-radius: 50px;
+        font-size: 30px;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+}
+
+.bannerSeccion {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, rgba(255,215,205,1) 50%);    color: white;
+    text-transform: uppercase;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 50px;
+    }
+}
+/* SOBRE MI */
+#sobre-mi {
+    display: grid;
+    grid-template-areas: 
+    "homeBanner"
+    "menu"
+    "bannerSeccion"
+    "sobre-mi"
+    "footer"
+    ;
+    grid-template-rows: 100%;
+}
+.sobre-mi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10%;
+    img {
+        width: 350px;
+        height: 350px;
+        margin: 10px auto;
+        margin-top: 0;
+        -webkit-animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        animation: puff-in-center 1s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+        p {
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 25px;
+            color: grey;
+            h2 {
+                font-size: 40px;
+            }
+            }
+        }
+    }
+@-webkit-keyframes puff-in-center {
+0% {
+-webkit-transform: scale(2);
+  transform: scale(2);
+-webkit-filter: blur(4px);
+  filter: blur(4px);
+opacity: 0;
+}
+100% {
+-webkit-transform: scale(1);
+  transform: scale(1);
+-webkit-filter: blur(0px);
+  filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes puff-in-center {
+0% {
+-webkit-transform: scale(2);
+  transform: scale(2);
+-webkit-filter: blur(4px);
+  filter: blur(4px);
+opacity: 0;
+}
+100% {
+-webkit-transform: scale(1);
+  transform: scale(1);
+-webkit-filter: blur(0px);
+  filter: blur(0px);
+opacity: 1;
+}
+}
+
+/* CLIENTES */ 
+#clientes {
+    display: grid;
+    grid-template-areas: 
+    "homeBanner"
+    "menu"
+    "bannerSeccion"
+    "nuestrosClientes"
+    "footer"
+    ;
+    grid-template-columns: 100%;
+}
+.nuestrosClientes {
+display: flex;
+flex-direction: column;
+width: 100%;
+text-align: center;
+margin-bottom: 10%;
+img {
+    width: 450px;
+    height: 450px;
+    margin: 15px auto;
+    -webkit-animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    h2 {
+        color: grey;
+        width: 60%;
+        margin: auto;
+        font-size: 40px;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            text-align: center;
+            width: 65%;
+            margin: auto;
+            font-size: 25px;
+            margin-top: 2.5%;
+            margin-bottom: 10%;
+            color: grey;
+        }
+    }
+}
+}
+@-webkit-keyframes slide-in-fwd-center {
+0% {
+-webkit-transform: translateZ(-1400px);
+transform: translateZ(-1400px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+opacity: 1;
+}
+}
+@keyframes slide-in-fwd-center {
+0% {
+-webkit-transform: translateZ(-1400px);
+transform: translateZ(-1400px);
+opacity: 0;
+}
+100% {
+-webkit-transform: translateZ(0);
+transform: translateZ(0);
+opacity: 1;
+}
+}
+.bannerSeccion {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.5690651260504201) 0%, $rosa 50%);
+    color: white;
+    text-transform: uppercase;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: 50px;
+    }
+}
+/* CONTACTO */ 
+#contacto {
+    display: grid;
+    grid-template-areas: 
+    "homeBanner"
+    "bannerSeccion"
+    "menu"
+    "formulario"
+    "footer";
+    grid-template-columns: 100%;
+}
+.formulario {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20%;
+    label {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+    input, textarea {
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 7px;
+        box-sizing: border-box;
+        border-radius: 20px;
+        border-color: grey;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    textarea {
+        min-height: 200px;
+        max-height: 300px;
+        max-width: 100%;
+    }
+
+    #boton {
+    color: $azul;
+    background-color: $rosa;
+    font-size: 30px;
+    max-width: 50%;
+    }
+}
+
+
+

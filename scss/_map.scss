@@ -1,0 +1,13 @@
+$colores: (
+    behance: #1869ff,
+    facebook: #475993,
+    instagram: #b5328c,
+    whatsapp: #48c857
+    );
+
+@each $colores, $bgcolor in $colores {
+    .rrss-#{$colores} {
+        background-color: $bgcolor;
+        border-radius: 50%;
+    }
+}

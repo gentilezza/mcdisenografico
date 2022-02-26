@@ -1,0 +1,13 @@
+@mixin button {
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1em;
+
+        &:hover {
+        color: blue;
+    }
+}
+
+.boton {
+    @include button;
+}
